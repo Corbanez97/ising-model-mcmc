@@ -40,7 +40,7 @@ The Metropolis-Hastings algorithm is a widely used Markov Chain Monte Carlo meth
 2. **Proposal:** Randomly select a spin and propose to flip it.
 3. **Acceptance:** Calculate the change in energy due to the proposed flip. Accept the flip with a probability that depends on the change in energy and the temperature of the system (Boltzmann factor):
    $$p_{ij} = P(r_1 | \sigma_i) = g(r_1 | \sigma_i) A(\sigma_j | \sigma_i)$$
-   where $g(r_1 | \sigma_i)$ is the probability of the proposal, and $ A(\sigma_j | \sigma_i) $ is the probability of accepting the proposal.
+   where $g(r_1 | \sigma_i)$ is the probability of the proposal, and $A(\sigma_j | \sigma_i)$ is the probability of accepting the proposal.
 5. **Iteration:** Repeat the proposal and acceptance steps for a large number of iterations to allow the system to reach equilibrium.
 
 By iterating this process, the algorithm generates a sequence of spin configurations that sample the equilibrium distribution of the system.
